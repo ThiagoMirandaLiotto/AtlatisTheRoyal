@@ -1,0 +1,231 @@
+:root{
+    --bs-font-sans-serif: "Jost", sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+.color-beige{
+    color: #9c846e !important;
+}
+.BGCOLOR{
+    background-color: #a7856a;
+}
+i{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+i:hover{
+  transform: scale(1.1);
+}
+/* FUENTES */
+.jost-all {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+.jost-300 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+} 
+span{
+    font-family: "Red Hat Text", sans-serif;
+}
+p{
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+}
+h1, h2{
+    font-family: "Cinzel", serif;
+}
+section{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.img1{
+    height: 100vh;
+}
+
+body{
+    background-color: black;
+}
+.HEADERNAV{
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0));
+    transition: background-color 0.3s ease-in-out;
+    z-index: 999;
+}
+.HEADERNAV.scrolled {
+    background-color: #9c846e !important;
+    background: none;
+}
+.jost-all.scrolled{
+    color: #ffffff;
+}
+
+
+/* CARRUSEL INI */
+.img-home{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.flechi{
+    color: black;
+}
+.popup-reserva{
+    z-index: 99;
+}
+.bg-beige{
+    background-color: #fefefe !important;
+    opacity: 1;
+    border-radius: 3px;
+    box-shadow: 2px 2px 12px #c5c5c58b, -6px -6px 12px #ffffff00;
+}
+.calendario{
+    width: 100%;
+    height: 3.5em;
+    border: 1px solid #e9e9e9;
+    padding: 0 10px 0 20px;
+    color: #666;
+    text-transform: uppercase;
+    background: #fefefe;
+    font-size: 13px;
+}
+.reservar{
+    background-color: #9c846e !important;
+    border-radius: 1px !important;
+    padding: 0.55em 1em !important;
+    font-weight: 600 !important;
+}
+.reservar:hover{
+    background-color: #000000 !important;
+}
+
+/* SECTION-1 */
+.section-1{
+    margin-top: 15vh;
+}
+.img-section1-segunda{
+    padding-top: 10vh;
+}
+.arrow-right{
+    padding-left: 1vh;
+    height: 1.5vh;
+    
+}
+
+/* SECTION-2 */
+.section-2{
+    padding: 3em;
+    background-color: #f6f6f5;
+}
+.section-2 div{
+    background-color: rgb(255, 255, 255);
+}
+
+/* SECTION-3 */
+.section-3{
+    padding: 0vh;
+}
+.section-3 div{
+    background-color: rgb(255, 255, 255);
+}
+
+.textd{
+    text-decoration: none;
+}
+
+.OPACBLOCK{
+    background: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.6));
+}
+/* SECTION COMIDAS NOSEQ */
+.img-hover:hover{
+    filter: brightness(50%);
+    transition: filter 0.3s ease;
+}
+/* SECTION AQUAVENTURE */
+.img-fixed{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.img-fixed::before { /* FILTRO OSCURO*/
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-attachment: inherit;
+  filter: brightness(50%);
+  z-index: -1;
+}
+.linea-span{
+    width: 7.5rem;
+    border-bottom: 1px solid rgba(0, 20, 70, .2);
+    margin: 1.25rem auto;
+    display: block;
+}
+
+
+
+.bg-beige2{
+    background-color: #f6f6f5;
+}
+
+.section-4{
+    padding: 3em;
+    background-color: #f6f6f5;
+}
+
+.section-5{
+    padding: 3em;
+    background-color: #ffffff;
+}
+
+
+.div-h{
+    background-color: white;
+}
+
+.w-85{
+    width: 85%;
+}
+
+.bg-beige-3{
+    background-color: #fefefe !important;
+    opacity: 1;
+    border-radius: 3px;
+    box-shadow: 2px 2px 52px #0000008b, -6px -6px 12px #00000000;
+}
+
+.img-contacto{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+    @media (min-width: 1300px){
+        .restaurante-deskop{
+            flex-wrap: nowrap !important;
+        }
+    }
+    
+    @media (min-width: 1050px){
+        .restaurante-deskop2{
+            flex-wrap: nowrap !important;
+        }
+    }

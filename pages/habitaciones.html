@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantis The Royal Dubai</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../boton.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../loading.css">
+    <link rel="icon" href="../img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- PARA MAPA -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- PARA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- PARA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+    <!-- ------HEADER------ -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top HEADERNAV">
+            <div class="container-fluid text-center row">
+                <div class="col-2">
+                </div>
+                  <div class="container-fluid col">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand" href="../index.html">
+                          <img src="../img/hotel-logo-blanco.webp" alt="Bootstrap" height="50">
+                        </a>
+
+                      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container d-flex justify-content-end">
+                                                    <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="../index.html"> <span class="jost-all">INICIO </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now"> <span class="jost-all">RESERVAS </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./habitaciones.html"> <span class="jost-all">HABITACIONES </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./contacto.html"> <span class="jost-all">CONTACTO </span> </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+
+                    </div>
+                  </div>
+                <div class="col-2">
+                </div>
+              </div>
+          </nav>
+    </header>
+
+    <!-- ---------MAIN--------- -->
+
+    <main>
+      <div class="position-relative">
+        <!-- Imagen de fondo -->
+        <img src="../img/Habitacion7.jpg" class="img-home w-100" alt="...">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+        <div class="position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center text-center">
+          
+          <h3 class="text-white">HABITACIONES</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="textd" href="../index.html"><span class="jost-300 text-light">Inicio</span></a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="textd" href="#"><span class="jost-300 text-light">Habitaciones</span></a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      
+
+        <section class="container mt-5">
+            <div class="row align-items-center mb-5">
+              <a href="./estandar.html" class="col p-0 me-1 me-lg-4 position-relative">
+                  <img class="img-fluid w-100 d-block" src="../img/Habitacion1.jpg" alt="">
+                
+                  <!-- Overlay oscuro del mismo tamaño que la imagen -->
+                  <div class="position-absolute top-0 start-0 w-100 h-100 OPACBLOCK"></div>
+                
+                  <!-- Texto en la parte inferior -->
+                  <h2 class="position-absolute bottom-0 start-0 text-white m-0 p-2 px-4">
+                    <span class="jost-300">Habitacion Estandar</span>
+                  </h2>
+
+                  <h4 class="position-absolute top-0 end-0 text-white mt-3 py-1 ps-3 pe-4 BGCOLOR">
+                    <span class="jost-all">$300</span>
+                  </h4>
+              </a>
+              
+              
+              <a href="./premium.html" class="col p-0 ms-1 ms-lg-4 position-relative">
+                <img class="img-fluid w-100 d-block" src="../img/Habitacion2.jpg" alt="">
+              
+                <!-- Overlay oscuro del mismo tamaño que la imagen -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 OPACBLOCK"></div>
+              
+                <!-- Texto en la parte inferior -->
+                <h2 class="position-absolute bottom-0 start-0 text-white m-0 p-2 px-4">
+                  <span class="jost-300">Habitacion Premium</span>
+                </h2>
+
+                <h4 class="position-absolute top-0 end-0 text-white mt-3 py-1 ps-3 pe-4 BGCOLOR">
+                  <span class="jost-all">$400</span>
+                </h4>
+              </a>
+            </div>
+
+            <div class="row align-items-center">
+              <a href="./lujo.html" class="col p-0 me-1 me-lg-4 position-relative">
+                <img class="img-fluid w-100 d-block" src="../img/Habitacion5.jpg" alt="">
+              
+                <!-- Overlay oscuro del mismo tamaño que la imagen -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 OPACBLOCK"></div>
+              
+                <!-- Texto en la parte inferior -->
+                <h2 class="position-absolute bottom-0 start-0 text-white m-0 p-2 px-4">
+                  <span class="jost-300">Habitacion Lujo</span>
+                </h2>
+
+                <h4 class="position-absolute top-0 end-0 text-white mt-3 py-1 ps-3 pe-4 BGCOLOR">
+                  <span class="jost-all">$500</span>
+                </h4>
+              </a>
+            
+            
+              <a href="./estandar.html" class="col p-0 ms-1 ms-lg-4 position-relative">
+                <img class="img-fluid w-100 d-block" src="../img/Habitacion6.jpg" alt="">
+              
+                <!-- Overlay oscuro del mismo tamaño que la imagen -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 OPACBLOCK"></div>
+              
+                <!-- Texto en la parte inferior -->
+                <h2 class="position-absolute bottom-0 start-0 text-white m-0 p-2 px-4">
+                  <span class="jost-300">Habitacion Familiar</span>
+                </h2>
+
+                <h4 class="position-absolute top-0 end-0 text-white mt-3 py-1 ps-3 pe-4 BGCOLOR">
+                  <span class="jost-all">$300</span>
+                </h4>
+              </a>
+            </div>
+        </section>
+
+        <section class="section-1">
+          <div class="container">
+            <div class="row align-items-center">
+  
+              <div class="col-md-6">
+                <div class="row g-3"> <!-- g-3 = gap entre columnas -->
+                  <div class="col-6">
+                    <img src="../img/Baño.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-6">
+                    <img src="../img/Baño2.jpg" class="img-fluid img-section1-segunda" alt="Imagen">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-5">
+                <h2>BAÑOS</h2>
+                <p>
+                  El hotel ofrece un exclusivo servicio de baños de primer nivel, diseñado para brindar una experiencia de relajación total. Cada baño está equipado con duchas de amplias dimensiones, ideales para disfrutar de un momento de confort, con opciones de temperatura que alcanzan hasta los 50°, permitiendo al huésped regular el clima del agua según sus preferencias.
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </section>
+
+        <section class="section-3">
+          <div class="container">
+            <div class="row align-items-center justify-content-end">
+
+              <div class="col-md-5 text-end">
+                <h2 class="pe-3">CAMAS</h2>
+                <p>
+                  Las habitaciones del hotel están equipadas con camas de máxima calidad, pensadas para ofrecer un descanso profundo y reparador. Cada colchón ha sido seleccionado cuidadosamente, combinando firmeza y suavidad para adaptarse a todo tipo de descanso, ya sea para una siesta rápida o una noche entera de sueño placentero.
+                  <br>
+                </p>
+                
+              </div>
+  
+              <div class="col-md-6">
+                <div class="row g-3"> <!-- g-3 = gap entre columnas -->
+                  <div class="col-6">
+                    <img src="../img/Cama2.jpg" class="img-fluid img-section1-segunda" alt="Imagen">
+                  </div>
+                  <div class="col-6">
+                    <img src="../img/a2.jpg" class="img-fluid" alt="">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-3 mb-5">
+          <div class="container">
+            <div class="row align-items-center">
+  
+              <div class="col-md-6">
+                <div class="row g-3"> <!-- g-3 = gap entre columnas -->
+                  <div class="col-6">
+                    <img src="../img/Comida.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-6">
+                    <img src="../img/Comida2.jpg" class="img-fluid img-section1-segunda" alt="Imagen">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-5">
+                <h2>COMIDA</h2>
+                <p>
+                  Deléitese con una experiencia culinaria sin interrupciones, donde cada plato es una obra de arte servida en la intimidad de su habitación. Nuestro servicio a la habitación está disponible las 24 horas, con una selección cuidadosamente curada por chefs de renombre internacional. Desde desayunos revitalizantes hasta cenas gourmet a la luz de las velas, cada pedido es atendido con la misma dedicación y excelencia que define a Atlantis The Royal.
+                </p>
+                
+              </div>
+  
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="section-4">
+          <div>
+            <h1 class="text-center">HAZ TU RESERVA EN EL HOTEL MAS LUJOSO DEL MUNDO</h1>
+          </div>
+  
+          <div id="reservar" class="popup-reserva container p-5 reservar2">
+              <div class="bg-beige">
+                <div class="row p-4">
+                  <div class="col-md-3">
+                    <p class="z-black fs-6 text-center text-lg-start pt-2 p-md-0" style="font-weight: 600;">Llegada</p>
+                    <span class="" data-name="sub"><input class="calendario" aria-invalid="false" placeholder="Check In" value="" type="date"></span>
+                  </div>
+                  <div class="col-md-3">
+                    <p class="text-black fs-6 text-center text-lg-start pt-2 p-md-0" style="font-weight: 600;">Salida</p>
+                    <span class="" data-name="sub"><input class="calendario" aria-invalid="false" placeholder="Check In" value="" type="date"></span>
+                  </div>
+                  <div class="col">
+                    <p class="text-black fs-6 text-center text-lg-start pt-2 p-md-0" style="font-weight: 600;">Adultos</p>
+                    <span class="wpcf7-form-control-wrap" data-name="sub3">
+                      <select class="calendario" aria-invalid="false">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <p class="text-black fs-6 text-center text-lg-start pt-2 p-md-0" style="font-weight: 600;">Niños</p>
+                      <span class="wpcf7-form-control-wrap" data-name="sub3">
+                        <select class="calendario" aria-invalid="false">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="6">6</option>
+                        </select>
+                      </span>
+                  </div>
+                  <div class="col">
+                    <p class="text-black fs-6 text-center text-lg-start pt-2 p-md-0" style="font-weight: 600;">Habitaciones</p>
+                    <span class="wpcf7-form-control-wrap" data-name="sub3">
+                      <select class="calendario" aria-invalid="false">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                      </select>
+                    </span>
+                  </div>
+                </div>
+                <div class="text-center pb-4">
+                  <a href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now"><button type="button" class="btn text-white reservar w-75">RESERVAR</button></a>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <section id="facilitiesAmenities" class="pt-14 pb-10">
+       <div class="container">
+            <!-- Encabezado -->
+            <div class="mb-10 text-center">
+              <h2 class="text-uppercase ff-heading mb-2 text-body-emphasis">Servicios del Hotel</h2>
+              <p class="h6 fw-medium text-body-secondary ff-sub text-uppercase ls-2 mb-5">Una experiencia pensada para tu comodidad</p>
+            </div>
+
+            <div class="row">
+              <!-- Wifi -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-wifi" style="color: #9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Wifi de Alta Velocidad</h3>
+                      <p>Conexión rápida y estable en todo el hotel para que estés siempre conectado.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recepción 24h -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-user" style="color: #9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Recepción 24 Horas</h3>
+                      <p>Atención personalizada todo el día, todos los días, para ayudarte en lo que necesites.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Estacionamiento -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-square-parking" style="color: #9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Estacionamiento</h3>
+                      <p>Amplio espacio para estacionar tu vehículo de forma segura y cómoda.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Piscina -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-person-swimming" style="color: #9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Piscina</h3>
+                      <p>Relajate y disfrutá de nuestra piscina climatizada con vista al skyline.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Spa -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-spa" style="color:#9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Centro de Spa</h3>
+                      <p>Un espacio dedicado al bienestar, con tratamientos exclusivos para tu relajación.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gimnasio -->
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="fs-1 text-primary pe-5 lh-sm">
+                      <i class="fa-solid fa-dumbbell" style="color:#9c846e;"></i>
+                    </div>
+                    <div>
+                      <h3 class="h5 text-uppercase ff-sub ls-1 text-body-emphasis">Gimnasio</h3>
+                      <p>Instalaciones modernas para que puedas mantener tu rutina de entrenamiento.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-div1">
+        <div class="footer-div-row">
+  
+          <div class="footer-div-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now">Reservar</a></li>
+              <li><a href="https://www.instagram.com/thiagoml43">Contactanos</a></li>
+              <li><a href="https://www.google.com/maps/place/Atlantis+The+Royal/@25.1358546,55.1221589,16z/data=!4m22!1m12!3m11!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!2sAtlantis+The+Royal!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!9m1!1b1!16s%2Fg%2F11ng6ywhn3!3m8!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!16s%2Fg%2F11ng6ywhn3?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D">Ubicacion</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-div-links">
+            <h4>Actividades</h4>
+            <ul>
+              <li><a href="./comidasyrestaurante.html">Comidas</a></li>
+              <li><a href="./comidasyrestaurante.html">Restaurantes</a></li>
+              <li><a href="https://www.aquaventureworld.com/aquaventure-waterpark/thrill-seekers">Aquaventure World</a></li>
+              <li><a href="./entretenimiento.html">Entretenimiento</a></li>
+          </ul>
+          </div>
+  
+          <div class="footer-div-links siguenos">
+            <h4>Redes</h4>
+            <div class="footer-social-link">
+              <a href="https://www.facebook.com/AtlantisTheRoyal/?locale=es_LA" TARGET="_BLANK"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/nico.orgnero/" TARGET="_BLANK"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/?lang=es" TARGET="_BLANK"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/nico.orgnero" TARGET="_BLANK"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/cambio-clases-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
+
+

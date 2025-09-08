@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantis The Royal Dubai</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../boton.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../loading.css">
+    <link rel="icon" href="../img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- PARA MAPA -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- PARA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- PARA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+    <!-- ------HEADER------ -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top HEADERNAV">
+            <div class="container-fluid text-center row">
+                <div class="col-2">
+                </div>
+                  <div class="container-fluid col">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand" href="../index.html">
+                          <img src="../img/hotel-logo-blanco.webp" alt="Bootstrap" height="50">
+                        </a>
+
+                      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container d-flex justify-content-end">
+                          <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="../index.html"> <span class="jost-all">INICIO </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now"> <span class="jost-all">RESERVAS </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./habitaciones.html"> <span class="jost-all">HABITACIONES </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./contacto.html"> <span class="jost-all">CONTACTO </span> </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+
+                    </div>
+                  </div>
+                <div class="col-2">
+                </div>
+              </div>
+          </nav>
+    </header>
+
+    <!-- ---------MAIN--------- -->
+
+    <main>
+      <div class="position-relative">
+        <!-- Imagen de fondo -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/restaurante1.webp" class="d-block w-100 img-home" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/restaurante2.webp" class="d-block w-100 img-home" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/restaurante3.webp" class="d-block w-100 img-home" alt="...">
+            </div>
+          </div>
+          
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+        <div class="position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center text-center">
+          
+          <h3 class="text-white">Comidas & Restaurantes</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="textd" href="../index.html"><span class="jost-300 text-light">Inicio</span></a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="textd" href="#"><span class="jost-300 text-light">Comidas & Restaurantes</span></a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+
+
+      <section class="section-1 ">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <div class="row g-3"> 
+                <div class="col-6">
+                  <img src="../img/comida1.avif" class="img-fluid" alt="">
+                </div>
+                <div class="col-6">
+                  <img src="../img/Comida.jpg" class="img-fluid img-section1-segunda" alt="Imagen">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <span style="color: rgb(17, 17, 17, 75%);">Todo sobre</span>
+              <h2>Gastronomía</h2>
+              <p>
+                Ingrese en un mundo de maravillas gastronómicas donde los mejores ingredientes se elaboran cuidadosamente para convertirse en obras maestras culinarias, donde sabores vibrantes, estaciones de cocina en vivo y un ambiente cálido se combinan para crear una experiencia gastronómica tipo buffet inolvidable. Gastronomy es el destino ideal para un festín sensorial.
+              </p>
+              
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center d-flex justify-content-center align-items-center" style="background-color: #1c1b21; height: 55vh;">
+          <div class="container">
+            <div style="max-width: 70vh;" class="m-auto">
+              <h1 style="color: #ffffff;">Restaurantes</h1>
+              <span class="linea-span" style="border-bottom: 1px solid #9c846e"></span>
+              <p class="fs-6 fw-normal" style="color: #e5e5e5;"> Atlantis The Royal alberga 17 restaurantes de excelencia, 8 de ellos de chefs de renombre y uno galardonado con estrellas Michelin, y junto con Atlantis, The Palm constituyen el destino culinario por excelencia de Dubái. Aquí encontrará una selección de los mejores chefs del mundo que crearán experiencias culinarias excepcionales para usted. Desde conceptos galardonados con estrellas Michelin hasta espectáculos culinarios, Atlantis The Royal cambiará el concepto de la excelencia en términos de gastronomía.</p>
+
+            </div>
+          </div>
+      </div>
+
+
+      <section>
+         <div class="text-center d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div style="max-width: 70vh;" class="m-auto">
+              <h1 style="color: #1c1b21;">Calificados con ESTRELLA MICHELIN</h1>
+              <span class="linea-span"></span>
+              <p class="fs-6 fw-normal" style="color: #000000;"> Disfrute de una experiencia culinaria de excelencia, creaciones visionarias y elaboración magistral en los restaurantes galardonados con estrellas Michelin de Atlantis Dubái. Deléitese en los restaurantes de alta cocina más aclamados de Dubái, donde cada detalle redefine la gastronomía de lujo.</p>
+              
+              
+                <div class="row justify-content-center align-items-stretch restaurante-deskop">
+                    <div class="col-12 col-xl-6 col-lg-9 p-4 h-100">
+                        <article class="card border-0 mb-6 h-100">
+                            <a href="https://www.restaurantfzn.com/" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/chef1.png" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-3 deskop-card">
+                                <a class="mb-2 small color-beige">Los mejores pescados</a>
+                                <h3 class="text-black fs-4" style="font-weight: 600;">FZN by Björn Frantzén</h3>
+                                <p>Tras el éxito de sus restaurantes galardonados con tres estrellas Michelin, Frantzén en Estocolmo y Zén en Singapur, el chef Björn Frantzén presenta su último concepto FZN en Atlantis, The Palm. FZN ofrece gastronomía europea moderna con influencias japonesas, con la precisión, inventiva y características inconfundibles de Frantzén.</p>
+                                <a href="https://www.restaurantfzn.com/" class="card-link fw-medium">
+                                  <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-9 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="https://www.sevenrooms.com/reservations/dinnerbyhestonblumenthalroyalatlantis/AD-website" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/chef2.png" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-4 deskop-card">
+                                  <a class="mb-2 small color-beige">Los mejores almuerzos</a>
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">Heston Blumenthal</h3>
+                                  <p>Celebrado como uno de los chefs más innovadores del mundo, Heston Blumenthal exhibe su cocina multisensorial, galardonada con una estrella Michelin, y un exclusivo maridaje de sabores.</p>
+                                <a href="https://www.sevenrooms.com/reservations/dinnerbyhestonblumenthalroyalatlantis/AD-website" class="card-link fw-medium">
+                                <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-9 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="https://www.milosdubai.com/" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/chef3.png" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-4  deskop-card">
+                                  <a class="mb-2 small color-beige">Comida griega</a>
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">Estiatorio Milos by Costas Spiliadis</h3>
+                                  <p>Reconocido como uno de los más prestigiosos restaurantes de mariscos del Mediterráneo por la Guía Michelin de 2023, Milos es la carta de presentación a los sabores, los vinos y la hospitalidad de Grecia.</p>
+                                <a href="https://www.milosdubai.com/" class="card-link fw-medium">
+                                <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-9 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="https://www.sevenrooms.com/reservations/arianaspersiankitchenroyalatlantis/AD-website" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/chef4.png" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-4 deskop-card">
+                                  <a class="mb-2 small color-beige">Comida latinamericana</a>
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">Ariana’s Persian Kitchen</h3>
+                                  <p>En el recientemente inaugurado restaurante de la célebre chef Ariana Bundy, los clásicos de la cocina persa se renuevan con un toque moderno en sus texturas, ingredientes y presentación.</p>
+                                <a href="https://www.sevenrooms.com/reservations/arianaspersiankitchenroyalatlantis/AD-website" class="card-link fw-medium">
+                                <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+      </div>
+      </section>
+      
+      <section>
+            <div style="height: 70vh;">
+              <div class="img-fixed text-center d-flex justify-content-center align-items-center"  style="height: 60vh; background-image: url('../img/restaurante3.webp'); filter: brightness(90%) !important;">
+                  <div class="container">
+
+                    <div class="row justify-content-center ">
+                      <div class="col-12 col-xl-7 col-lg-9 text-white d-flex flex-column align-items-center">
+                          <h1 style="color: #ffffff; background-color:black;">Restaurantes Informales</h1>
+                          <span class="linea-span"></span>
+                          <p class="fs-5 fw-normal" style="color: #e4e4e4;"> Disfrute de una experiencia culinaria de excelencia, creaciones visionarias y elaboración magistral en los restaurantes galardonados con estrellas Michelin de Atlantis Dubái. Deléitese en los restaurantes de alta cocina más aclamados de Dubái, donde cada detalle redefine la gastronomía de lujo.</p>
+                      </div>
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+         <div class="d-flex justify-content-center align-items-center" >
+          <div class="container">
+            
+            <div style="max-width: 70vh;" class="m-auto">
+
+                <div class="row justify-content-center align-items-stretch restaurante-deskop2">
+                    <div class="col-12 col-xl-9 col-lg-9 col-md-12 p-4">
+                        <article class="card border-0 mb-6">
+                          <a href="https://www.sevenrooms.com/explore/seascapesroyalatlantis/reservations/create/search?tracking=ad-website" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/RESTAURANTE6.jpeg" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body p-0 pt-3 deskop-card2">
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">MALIBU 90265</h3>
+                                  <p>Este restaurante inspirado en la Costa Oeste de Estados Unidos es el lugar ideal para disfrutar de una comida saludable con familiares y amigos. En él se sirve cocina tradicional californiana con el corazón y una sonrisa genuina desde su clásica cocina abierta. El menú ofrece los platos norteamericanos favoritos de todos, desde suculentas hamburguesas y perritos calientes hasta vibrantes ensaladas y refrescantes batidos.</p>
+                                <a href="https://www.sevenrooms.com/reservations/malibu90265royalatlantis/AD-website" class="card-link fw-medium">
+                                <span class="color-beige">RESERVAR</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-9 col-lg-9 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="https://www.sevenrooms.com/explore/seascapesroyalatlantis/reservations/create/search?tracking=ad-website" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/restaurante4.jpg" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body p-0 pt-3 deskop-card2">
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">SEASCAPES</h3>
+                                  <p>Reconocido como uno de los más prestigiosos restaurantes de mariscos del Mediterráneo por la Guía Michelin de 2023, Milos es la carta de presentación a los sabores, los vinos y la hospitalidad de Grecia.</p>
+                                <a href="https://www.sevenrooms.com/explore/seascapesroyalatlantis/reservations/create/search?tracking=ad-website" class="card-link fw-medium">
+                                <span class="color-beige">RESERVAR</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-9 col-lg-9 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="https://www.sevenrooms.com/reservations/royaltearoomroyalatlantis/AD-website" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="../img/restaurante5.jpg" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body p-0 pt-3 deskop-card2">
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">THE ROYAL TEAROOM</h3>
+                                  <p>En el recientemente inaugurado restaurante de la célebre chef Ariana Bundy, los clásicos de la cocina persa se renuevan con un toque moderno en sus texturas, ingredientes y presentación.</p>
+                                <a href="https://www.sevenrooms.com/reservations/royaltearoomroyalatlantis/AD-website" class="card-link fw-medium">
+                                <span class="color-beige">RESERVAR</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
+      </div>
+      </section>
+
+
+
+
+
+
+        <div style="height: 75vh; margin-top: 15em;">
+          <div class="img-fixed text-center d-flex justify-content-center align-items-center" style="height: 75vh; background-image: url('../img/chefs.webp');">
+              <div class="container">
+
+                <div class="row justify-content-center ">
+                  <div class="col-12 col-xl-7 col-lg-9 text-white d-flex flex-column align-items-center">
+                      <a href="../img/videoCHEFS.mp4" class="video-play d-inline-block" data-type="video">
+                        <i class="fa-solid fa-play fs-1" style="color: #ffffff;"></i>
+                      </a>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-div1">
+        <div class="footer-div-row">
+  
+          <div class="footer-div-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now">Reservar</a></li>
+              <li><a href="https://www.instagram.com/thiagoml43">Contactanos</a></li>
+              <li><a href="https://www.google.com/maps/place/Atlantis+The+Royal/@25.1358546,55.1221589,16z/data=!4m22!1m12!3m11!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!2sAtlantis+The+Royal!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!9m1!1b1!16s%2Fg%2F11ng6ywhn3!3m8!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!16s%2Fg%2F11ng6ywhn3?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D">Ubicacion</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-div-links">
+            <h4>Actividades</h4>
+            <ul>
+              <li><a href="./comidasyrestaurante.html">Comidas</a></li>
+              <li><a href="./comidasyrestaurante.html">Restaurantes</a></li>
+              <li><a href="https://www.aquaventureworld.com/aquaventure-waterpark/thrill-seekers">Aquaventure World</a></li>
+              <li><a href="./entretenimiento.html">Entretenimiento</a></li>
+          </ul>
+          </div>
+  
+          <div class="footer-div-links siguenos">
+            <h4>Redes</h4>
+            <div class="footer-social-link">
+              <a href="https://www.facebook.com/AtlantisTheRoyal/?locale=es_LA" TARGET="_BLANK"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/nico.orgnero/" TARGET="_BLANK"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/?lang=es" TARGET="_BLANK"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/nico.orgnero" TARGET="_BLANK"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/cambio-clases-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

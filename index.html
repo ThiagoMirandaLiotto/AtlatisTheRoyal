@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantis The Royal Dubai</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./boton.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="icon" href="./img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- PARA MAPA -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- PARA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- PARA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top HEADERNAV">
+            <div class="container-fluid text-center row">
+                <div class="col-2">
+                </div>
+                  <div class="container-fluid col">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand" href="../html5/index.html">
+                          <img src="./img/hotel-logo-blanco.webp" alt="Bootstrap" height="50">
+                        </a>
+
+                      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container d-flex justify-content-end">
+                          <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./index.html"> <span class="jost-all">INICIO </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="https://www.atlantis.com/es/dubai/reservations/rooms/book-now"> <span class="jost-all">RESERVAS </span> </a> <!-- NO HICIMOS UNA PAGINA DE RESERVAS PORQUE ERA MUY ELABORADA Y NO LLEGABAMOS CON EL TIEMPO -->
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./pages/habitaciones.html"> <span class="jost-all">HABITACIONES </span> </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./pages/contacto.html"> <span class="jost-all">CONTACTO </span> </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+
+                    </div>
+                  </div>
+                <div class="col-2">
+                </div>
+              </div>
+          </nav>
+    </header>
+    
+    <main>
+      <!-- CARRUSEL INICIO -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade ride" data-bs-theme="dark" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Hotel-Atlantis-The-Royal-1.webp" class="d-block w-100 img-home" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/atlantis-the-royal-kpf_3.jpg" class="d-block w-100 img-home" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hotel-Atlantis-The-Royal-5.webp" class="d-block w-100 img-home" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden flechi">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <form action="http://localhost:3000/insertar" method="post">
+      <div id="reservar" class="popup-reserva container position-absolute start-50 translate-middle p-5">
+        <div class="bg-beige">
+          <div class="row p-4">
+            <div class="col-md-3">
+              <p class="z-black fs-6" style="font-weight: 600;">Llegada</p>
+              <span class="" data-name="sub"><input name="Llegada" class="calendario" aria-invalid="false" placeholder="Check In" value="" type="date"></span>
+            </div>
+            <div class="col-md-3">
+              <p class="text-black fs-6" style="font-weight: 600;">Salida</p>
+              <span class="" data-name="sub"><input name="Salida" class="calendario" aria-invalid="false" placeholder="Check In" value="" type="date"></span>
+            </div>
+            <div class="col">
+              <p class="text-black fs-6" style="font-weight: 600;">Adultos</p>
+              <span class="wpcf7-form-control-wrap" data-name="sub3">
+                <select name="Adultos" class="calendario" aria-invalid="false">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </span>
+            </div>
+            <div class="col">
+              <p class="text-black fs-6" style="font-weight: 600;">Niños</p>
+                <span class="wpcf7-form-control-wrap" data-name="sub3">
+                  <select name="Niños" class="calendario" aria-invalid="false">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                  </select>
+                </span>
+            </div>
+            <div class="col">
+              <p class="text-black fs-6" style="font-weight: 600;">Habitaciones</p>
+              <span class="wpcf7-form-control-wrap" data-name="sub3">
+                <select name="Habitaciones" class="calendario" aria-invalid="false">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
+              </span>
+            </div>
+            <div class="col">
+              <p class="text-white fs-7" style="font-weight: 600;"></p>
+              <button type="submit" class="btn text-white reservar">RESERVAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+      <!-- SECTION 1 -->
+      <section class="section-1">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <div class="row g-3"> 
+                <div class="col-6">
+                  <img src="./img/a2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-6">
+                  <img src="./img/a1.jpg" class="img-fluid img-section1-segunda" alt="Imagen">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <span style="color: rgb(17, 17, 17, 75%);">BIENVENIDO A</span>
+              <h2>Atlantis The Royal</h2>
+              <p>Descubra el lujo reinventado en Atlantis The Royal, un ícono arquitectónico en Dubái. Cada detalle ha sido diseñado para ofrecer una estadía verdaderamente extraordinaria. Todas habitaciones de Atlantis The Royal redefinen el significado del lujo moderno. Diseñadas con una elegancia impecable, con tonos beige que dan placer con solo verlo. Algunas habitaciones incluso cuentan con piscinas privadas y servicio de mayordomo las 24 horas. En Atlantis The Royal, cada detalle ha sido pensado para que el descanso se convierta en un verdadero placer.</p>
+              <a href="./pages/habitaciones.html">
+                <button type="button" class="button">Explorar<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="ubicacion" class="section-2">
+        <div class="container">
+          <div class="row align-items-md-stretch">
+
+            <div class="col-12 col-xl-4 col-lg-6">
+              <div class="p-4 pt-5 pb-5 h-100 d-flex align-items-center">
+                <div>
+                  <h2>Ubicacion</h2>
+                  <p class="">Uno de los edificios más fotografiados del mundo, Atlantis Dubái está situado en la media luna de la isla de la Palmera, un proyecto emblemático al borde del Mar Arábigo. </p>
+                  <a href="https://www.google.com/maps/place/Atlantis+The+Royal/@25.1358546,55.1221589,16z/data=!4m22!1m12!3m11!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!2sAtlantis+The+Royal!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!9m1!1b1!16s%2Fg%2F11ng6ywhn3!3m8!1s0x3e5f15086afe32c9:0xcc7618cd4530c0e1!5m2!4m1!1i2!8m2!3d25.1386034!4d55.1277594!16s%2Fg%2F11ng6ywhn3?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D">
+                    <button type="button" class="button">Explorar<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-8 col-lg-6 p-0">
+              <div id="map" class="border-0 w-100 d-block rounded overflow-hidden" style="height:450px"></div>
+              <!-- <iframe src="https://snazzymaps.com/embed/385606" class="border-0 w-100 d-block rounded overflow-hidden" style="height:450px"></iframe> -->
+              <!-- <iframe style="height: 450px; width: 100vh;" class="propertyMap_atp-styles_v2_scss__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1pnnsPN4XdoymOPN3Ogbw64-jl97gCTI&amp;ehbc=2E312F&amp;markers=size:mid%7cscale:4"></iframe> -->
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION ENTRETENIMIENTO Y COMIDAS -->
+        <section id="newsEvents" class="pt-14 pb-14">
+            <div class="container">
+                <div class="mb-8 text-center">
+                    <h2 class="text-uppercase ff-heading text-body-emphasis">Servicios &amp; Actividades</h2>
+                    <p class="h6 fw-medium text-body-secondary ff-sub text-uppercase ls-2">De todo tipo</p>
+                </div>
+
+                <div class="row justify-content-center align-items-stretch">
+                    <div class="col-12 col-xl-6 col-lg-6 p-4 h-100">
+                        <article class="card border-0 mb-6 h-100">
+                            <a href="./pages/comidasyrestaurante.html" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="./img/comida1.avif" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-4">
+                                <a class="mb-2 small color-beige">NOVEDADES</a>
+                                <h3 class="text-black fs-4" style="font-weight: 600;">Comidas &amp; Restaurantes</h3>
+                                <p>Descubrí los nuevos menús de temporada en nuestros nuevos restaurantes asociados. Platos gourmet, ingredientes frescos y descuentos especiales durante todo el mes.</p>
+                                <a href="./pages/comidasyrestaurante.html" class="card-link fw-medium">
+                                  <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-6 p-4">
+                        <article class="card border-0 mb-6">
+                            <a href="./pages/entretenimiento.html" title="">
+                                <figure class="rounded-top mb-0">
+                                    <img src="./img/entretenimiento.jpg" class="card-img-top img-hover" alt="">
+                                </figure>
+                            </a>
+                            <div class="card-body bg-beige p-4">
+                                  <a class="mb-2 small color-beige">TIEMPO LIBRE</a>
+                                  <h3 class="text-black fs-4" style="font-weight: 600;">Entretenimiento</h3>
+                                  <p>No te pierdas los mejores shows, eventos culturales y actividades recreativas para toda la familia. Viví experiencias únicas con nuestras propuestas de musica en vivo, teatro, y actividades para todas las edades.</p>
+                                <a href="./pages/entretenimiento.html" class="card-link fw-medium">
+                                <span class="color-beige">Detalles</span><svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#9c846e" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION AQUAVENTURE  -->
+         <div style="height: 90vh;">
+          <div class="img-fixed text-center d-flex justify-content-center align-items-center" style="border-bottom-left-radius: 20vh; border-bottom-right-radius: 20vh; height: 90vh; background-image: url('./img/aquaverse.webp');">
+              <div class="container">
+
+                <div class="row justify-content-center ">
+                  <div class="col-12 col-xl-7 col-lg-9 text-white d-flex flex-column align-items-center">
+                      
+                      <img class="pb-4 figure-img" style="height: 18vh;" src="./img/Aquaventure-Logo-white.png" alt="">
+                      <a href="./img/AQW-waterpark-video.mp4" class="video-play d-inline-block" data-type="video">
+                        <i class="fa-solid fa-play fs-1" style="color: #ffffff;"></i>
+                      </a>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+        <div class="text-center d-flex justify-content-center align-items-center pt-5 pb-5" style="background-color: rgb(255, 255, 255);">
+          <div class="container">
+            <div style="max-width: 70vh;" class="m-auto">
+              <h1 style="color: #214f5a;">¡El parque acuático más grande del mundo le espera!</h1>
+              <span class="linea-span"></span>
+              <p class="fs-5 fw-normal"> Incluye tickets gratis todos los dias para Aquaventure World, contiene 105 toboganes que baten todos los récords, atracciones y experiencias únicas.</p>
+              <a href="https://www.aquaventureworld.com/aquaventure-waterpark/thrill-seekers">
+                <button class="button-aquaventure mt-5">
+                  EXPLORAR
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-div1">
+      <div class="footer-div-row">
+
+        <div class="footer-div-links">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#reservar">Reservar</a></li>
+            <li><a href="https://www.instagram.com/thiagoml43">Contactanos</a></li>
+            <li><a href="#ubicacion">Ubicacion</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-div-links">
+          <h4>Actividades</h4>
+          <ul>
+            <li><a href="./pages/comidasyrestaurante.html">Comidas</a></li>
+            <li><a href="./pages/comidasyrestaurante.html">Restaurantes</a></li>
+            <li><a href="https://www.aquaventureworld.com/aquaventure-waterpark/thrill-seekers">Aquaventure World</a></li>
+            <li><a href="./pages/entretenimiento.html">Entretenimiento</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-div-links siguenos">
+          <h4>Redes</h4>
+          <div class="footer-social-link">
+            <a href="https://www.facebook.com/AtlantisTheRoyal/?locale=es_LA" TARGET="_BLANK"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/thiagoml43" TARGET="_BLANK"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" TARGET="_BLANK"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nico.orgnero" TARGET="_BLANK"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- JAVASCRIPT -->
+      <!-- MAPA -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var map = L.map('map').setView([25.115546, 55.137015], 13);
+        // 3. Agregar un marcador
+        var marker = L.marker([25.134196, 55.122854]).addTo(map);
+        marker.bindPopup("<b>Atlantis The Royal</b><br>Trabajo de Thiago y Nico.").openPopup();
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap, &copy; CartoDB',
+          subdomains: 'abcd',
+          maxZoom: 19
+        }).addTo(map);
+      });
+    </script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({
+        selector: '.video-play'
+      });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/cambio-clases-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
